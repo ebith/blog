@@ -1,0 +1,100 @@
+---
+comments: true
+date: 2013-02-03T00:00:00Z
+published: true
+title: HubotでIRC Botを作る
+url: /2013/02/03/hubot-irc/
+---
+
+## Node.jsのインストールと下準備
+Node.jsの管理には[Nodebrew](https://github.com/hokaccha/nodebrew "hokaccha/nodebrew · GitHub")を使う。  
+Readmeに従ってインストールして、Nodebrew経由でNodeのバイナリを入れる。  
+更にcoffee-script必要らしいのとforeverあると便利らしいので入れとく。
+```sh
+nodebrew install-binary stable
+nodebrew use v0.8.17
+npm install -g forever
+npm install -g coffee-script
+```
+
+## Bot作る
+フォルダ構成はこんなの。
+```
+bot/
+├── node_modules
+├── scripts
+│   ├── colorful-ping.coffee
+│   ├── config.coffee
+│   ├── fetch-title.coffee
+│   ├── rating.coffee
+│   ├── reddit-gamedeals.coffee
+│   ├── upgrade.coffee
+│   └── vpn-manager.coffee
+├── hubot-scripts.json
+├── package.json
+└── run.sh
+```
+
+こんな感じにpackage.json書いてnpm installするとややこしいことなくインストール完了。
+```json
+{
+  "name": "ebithubot",
+  "version": "0.0.1",
+  "dependencies": {
+    "hubot": "2.3.5",
+    "hubot-irc": "0.1.4",
+    "hubot-scripts": "2.2.2",
+
+    "cron": "*",
+    "request": "*",
+    "iconv-jp": "*",
+    "request": "*",
+    "cheerio": "*",
+    "aws-sdk": "*",
+    "ntwitter": "*"
+  }
+}
+```
+
+あとは好きなだけスクリプトを書いてBotの機能強化に励む。  
+[Hubot付属のscript](https://github.com/github/hubot/tree/master/src/scripts "hubot/src/scripts at master · github/hubot · GitHub")が良い例。
+
+## 運用において
+スクリプトのリロード機能が無くて、毎回再起動するしかないのでIRC Proxy無しでの運用は厳しい。  
+かといって普段使いのProxyに繋ぐと入ってるチャンネル全部のメッセージを処理対象にしてしまうのでイマイチ。
+
+### 起動スクリプト
+設定類は環境変数で行うのが基本らしいのでシェルスクリプトに`export`を並び立てる。  
+```sh
+#!/usr/bin/env bash
+
+# hubot
+export PORT=8889
+
+# hubot-irc
+export HUBOT_IRC_UNFLOOD="true"
+export HUBOT_IRC_NICK="ebithubot"
+export HUBOT_IRC_PORT="6669"
+export HUBOT_IRC_SERVER="localhost"
+export HUBOT_IRC_ROOMS="#ebithubot"
+
+forever start -c coffee node_modules/hubot/bin/hubot -a irc
+```
+
+### Notice使いたい
+[hubotスクリプトの書き方とサンプル集 | mitc](http://blog.fumiz.me/2012/08/05/hubot-irc-bot-script/#notice "hubotスクリプトの書き方とサンプル集 | mitc")によると互換性のために削除されたらしい。  
+hubot-ircにパッチを当てて復活させる。v0.1.4向け。
+{% gist 4505583 %}
+
+### データの永続化
+データの永続化はオプションになっていて、Redis以外にもMongoDBやAmazon S3とかファイルも選べるようになってる。  
+どれもhubot-scriptsのリポジトリに入っているので`hubot-scripts.json`に`["redis-brain.coffee"]`とか書く。  
+永続化のための*-brain.coffeeが読み込まれるとrobot.brain.dataが5秒おきに自動保存されるようになる。
+
+ただし02/01/2013現在npm上で最新のhubot-scripts 2.4.1に入ってるredis-brain.coffeeは壊れてるので一つ前の2.2.2とか使うべき。
+
+### forever
+簡単なdaemontoolsみたいなので便利なんだけど、logrotateの仕組みが無いのでログをいっぱい吐いてるとディスクを圧迫する。  
+かといってログをrmとかしちゃうとそこで書き込みが止まってしまうのでアレ。
+
+

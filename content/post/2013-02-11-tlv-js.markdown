@@ -1,0 +1,31 @@
+---
+comments: true
+date: 2013-02-11T00:00:00Z
+published: true
+title: Tiarraのログをブラウザから見たり検索したりできるやつ作った
+url: /2013/02/11/tlv-js/
+---
+
+## [TLV.js](https://github.com/ebith/TLV.js "ebith/TLV.js · GitHub")
+<a href="http://www.flickr.com/photos/ebith/8475029653/" title="tlv01 by Ebith, on Flickr"><img src="http://farm9.staticflickr.com/8111/8475029653_055048fbb4_n.jpg" width="320" height="240" alt="tlv01"></a>
+<a href="http://www.flickr.com/photos/ebith/8475029689/" title="tlv02 by Ebith, on Flickr"><img src="http://farm9.staticflickr.com/8246/8475029689_ba2e947ac5_n.jpg" width="320" height="240" alt="tlv02"></a>  
+画像はTwitterのPublic TimelineをIRCのログ代わりにしたやつ。  
+古いログをひたすら継ぎ足して表示したり、検索したり、とある日のログを読んだりできる。
+
+## 試してみる
+MongoDBは動いてる前提。インストールするなら[Installing MongoDB](http://docs.mongodb.org/manual/installation/ "Installing MongoDB — MongoDB Manual")が詳しい。  
+Mongo.pmをtiarraPath/module/Log/に配置、confの例は以下に。  
+必要に応じて`cpanm MongoDB`したのち`/load`か再起動でMongo.pmを読み込む。
+```
++ Log::Mongo {
+  charset: utf8
+  channel: *
+}
+```
+Node.jsとcoffee-scriptが入っていれば`npm install`して`coffee app.coffee`で動き出す。  
+http://localhost:3000にアクセス！
+
+## その他
+環境変数NODE\_ENVを`production`に設定するとSSL+BASIC認証で起動する。\_run.sh参照。  
+あとから見返したいチャンネルが1つだけだったのでチャンネル名を考慮していない。全部混ざって表示されるはず。
+
