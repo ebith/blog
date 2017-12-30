@@ -3,7 +3,7 @@ title = "おいら屋ファクトリー"
 copyright = "&copy <a href=\"https://twitter.com/ebith\">ebith</a> 2012-2017"
 hasCJKLanguage = true
 googleAnalytics = "UA-34280150-1"
-paginate = 10
+paginate = 15
 preserveTaxonomyNames = true
 enableRobotsTXT = true
 defaultContentLanguage = "ja"
@@ -11,6 +11,9 @@ defaultContentLanguage = "ja"
 theme = "aglaus"
 [params]
   dateformat= "January 02, 2006"
+  ampscripts = """
+<script async custom-element="amp-twitter" src="https://cdn.ampproject.org/v0/amp-twitter-0.1.js"></script>
+"""
 
 [permalinks]
 page = "/:slug/"
