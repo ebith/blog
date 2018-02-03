@@ -25,7 +25,8 @@ Aボタン連打の様な単純なことをしたいだけなら雪玉ボウル�
 最近発売されたAdafruitの[Itsy Bitsy 32u4](https://learn.adafruit.com/introducting-itsy-bitsy-32u4?view=all)が$10でリセットボタン有りピン省略無し強固そうなUSB端子で良さそうだけど入手難易度が高い。  
 その他バリエーションや詳細に関しては[(Arduino) Pro Micro](https://ht-deko.com/arduino/promicro.html)が詳しい。  
 [A-Star 32U4](https://www.switch-science.com/catalog/list/?keyword=A-Star+32U4)なんかもATMega32U4が載ってる。  
-こだわりが無ければAliExpressで売ってるやつが安いが初期不良や納期にリスクがある。
+こだわりが無ければAliExpressで売ってるやつが安いが初期不良や納期にリスクがある。  
+*追記: Adafruit Itsy Bitsy 32u4が国内で買えるようになってる [Adafruit Itsy Bitsy 32u4 - 5V 16MHz - スイッチサイエンス](https://www.switch-science.com/catalog/3626/)
 
 ## ソフトウェア
 ポッ拳コントローラ(WiiU)に偽装することでスイッチを操作する。  

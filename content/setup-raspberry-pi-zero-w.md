@@ -51,13 +51,14 @@ echo -e "Port 75826\nPasswordAuthentication no\nPermitRootLogin no" | sudo tee -
 chshのあと新たなログインでは反映されず再起動が必要なのが謎。  
 vimの設定ファイルはVPSにリポジトリがあるのでそっちから取って来る。公開鍵の登録とか`~/.ssh/config`の編集が必要。
 ```sh
-sudo apt install git zsh vim gawk
+sudo apt install git zsh vim tmux gawk
 sudo update-alternatives --config editor
 ghq get ebith/dotfiles
 ln -s ~/.ghq/github.com/ebith/dotfiles/.config ~/.config
 ln -s ~/.ghq/github.com/ebith/dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/.ghq/github.com/ebith/dotfiles/.zshenv ~/.zshenv
 ln -s ~/.ghq/github.com/ebith/dotfiles/.zshrc ~/.zshrc
+ln -s ~/.ghq/github.com/ebith/dotfiles/.tmux.conf ~/.tmux.conf
 curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh| zsh
 chsh -s /bin/zsh
 sudo systemctl reboot
