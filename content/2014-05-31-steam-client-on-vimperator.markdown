@@ -6,10 +6,10 @@ title: VimperatorプラグインなSteamクライアント作った
 url: /2014/05/31/steam-client-on-vimperator/
 ---
 
-![:steam play dark](http://i.gyazo.com/2c0610f54dd67fe0ea2b567f0f4ed2ae.png)  
+![:steam play dark](https://i.gyazo.com/2c0610f54dd67fe0ea2b567f0f4ed2ae.png)  
 こんな感じ
 
-![:steam play -sort playtime! dark](http://i.gyazo.com/eca7b1576b65dba9457efd06a6465e10.png)  
+![:steam play -sort playtime! dark](https://i.gyazo.com/eca7b1576b65dba9457efd06a6465e10.png)  
 ソートもできる
 
 ### 使い方

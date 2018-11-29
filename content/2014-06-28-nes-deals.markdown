@@ -11,7 +11,7 @@ url: /2014/06/28/nes-deals/
 しかしセール待ちしても中古のほうが安かったりもするし結構悩ましいのでSteamぐらい頑張って欲しい。
 
 
-![text/htmlの場合](http://i.gyazo.com/01c3e763ba2fbe7b14695471529ea3ec.png)  
+![text/htmlの場合](https://i.gyazo.com/01c3e763ba2fbe7b14695471529ea3ec.png)  
 こんな感じ。  
 content-typeを見てるのでブラウザでアクセスすればhtmlが、RSSリーダー等でアクセスすればrssが表示されるはず。  
 jsonもあるよ。

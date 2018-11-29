@@ -10,7 +10,7 @@ url: /2013/05/19/feedline/
 CrowsnestとかGunosyみたいな便利っぽいのもあるけど、  
 単にタイムラインに流れてきたURLを後からフィードリーダーで見たかったので作った。
 
-<a href="http://www.flickr.com/photos/ebith/8766575214/" title="feedline02 by Ebith, on Flickr"><img src="http://farm9.staticflickr.com/8257/8766575214_12bfe1e912_n.jpg" width="320" height="293" alt="feedline02"></a>  
+<a href="http://www.flickr.com/photos/ebith/8766575214/" title="feedline02 by Ebith, on Flickr"><img src="https://farm9.staticflickr.com/8257/8766575214_12bfe1e912_n.jpg" width="320" height="293" alt="feedline02"></a>  
 こんな感じで読める。
 
 config.coffee.sampleを参考にconfig.coffeeを用意して、`npm install`すればあとは起動するだけ。  

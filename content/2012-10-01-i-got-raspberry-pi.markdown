@@ -6,7 +6,7 @@ title: ラズベリーパイを手に入れた！
 url: /2012/10/01/i-got-raspberry-pi/
 ---
 
-<a href="http://www.flickr.com/photos/ebith/8038651368/" title="Raspberry Pi 1/2 by Ebith, on Flickr"><img src="http://farm9.staticflickr.com/8462/8038651368_d716208375_n.jpg" width="320" height="239" alt="Raspberry Pi 1/2"></a><a href="http://www.flickr.com/photos/ebith/8038648103/" title="Raspberry Pi 2/2 by Ebith, on Flickr"><img src="http://farm9.staticflickr.com/8316/8038648103_f163c4d92a_n.jpg" width="320" height="239" alt="Raspberry Pi 2/2"></a>  
+<a href="http://www.flickr.com/photos/ebith/8038651368/" title="Raspberry Pi 1/2 by Ebith, on Flickr"><img src="https://farm9.staticflickr.com/8462/8038651368_d716208375_n.jpg" width="320" height="239" alt="Raspberry Pi 1/2"></a><a href="http://www.flickr.com/photos/ebith/8038648103/" title="Raspberry Pi 2/2 by Ebith, on Flickr"><img src="https://farm9.staticflickr.com/8316/8038648103_f163c4d92a_n.jpg" width="320" height="239" alt="Raspberry Pi 2/2"></a>  
 6月末にRSに注文したものの、届く気配もなかったのでModMyPiに頼んでみると1週間で到着。  
 残念ながらRev1だったけど、Arch Linuxを入れてHeadless運用でしばらく遊ぶことにする。
 

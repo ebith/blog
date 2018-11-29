@@ -6,7 +6,7 @@ title: ミューズリーのクッキー
 url: /2012/09/11/muesli-cookies/
 ---
 
-<a href="http://www.flickr.com/photos/ebith/7975028474/" title="ミューズリーのクッキー by Ebith, on Flickr"><img src="http://farm9.staticflickr.com/8302/7975028474_740036360a_n.jpg" width="320" height="239" alt="ミューズリーのクッキー"></a>  
+<a href="http://www.flickr.com/photos/ebith/7975028474/" title="ミューズリーのクッキー by Ebith, on Flickr"><img src="https://farm9.staticflickr.com/8302/7975028474_740036360a_n.jpg" width="320" height="239" alt="ミューズリーのクッキー"></a>  
 [ミューズリーのクッキー : ハチミツカメラ](http://hnycamera.exblog.jp/13661996 "ミューズリーのクッキー : ハチミツカメラ")より。  
 はちみつじゃなくてメープルシロップだったり、水分やや大目だったりする程度のアレンジ。  
 バキバキと硬くて食べごたえのあるクッキーができるのでお気に入り。

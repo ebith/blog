@@ -6,8 +6,8 @@ title: ゲーム用の新PC組んだ
 url: /2012/09/07/new-gaming-pc/
 ---
 
-[![New gaming pc 1/2](http://farm9.staticflickr.com/8037/7949568956_1d55933fa2_n.jpg)](http://flic.kr/p/d7tBTJ "New gaming pc 1/2 by Ebith, on Flickr")
-[![New gaming pc 2/2](http://farm9.staticflickr.com/8035/7949602654_782f691be0_n.jpg)](http://flic.kr/p/d7tMUJ "New gaming pc 2/2 by Ebith, on Flickr")
+[![New gaming pc 1/2](https://farm9.staticflickr.com/8037/7949568956_1d55933fa2_n.jpg)](http://flic.kr/p/d7tBTJ "New gaming pc 1/2 by Ebith, on Flickr")
+[![New gaming pc 2/2](https://farm9.staticflickr.com/8035/7949602654_782f691be0_n.jpg)](http://flic.kr/p/d7tMUJ "New gaming pc 2/2 by Ebith, on Flickr")
 
 ## 構成
 * ケース
